@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body class="overflow-y-auto ">
+	<header class="fixed z-200 bg-white shadow-lg text-center w-full">
+		<h1 class="mb-4 text-3xl  font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span
+				class="text-transparent bg-clip-text bg-gradient-to-r to-gray-900 from-gray-400">𝓛𝓮
+				𝓟𝓻𝓮𝓱𝓲𝓼𝓽𝓸𝓻𝓲𝓪 </span></h1>
+		<div class="h-35 shadow-lg bg-white flex item-center px-10">
+
+			<div class="navbarstart flex font-size space-x-6 w-full">
+
+				<a class="text-gray-900 mr-4 hover:text-blue-700" href="#hebergement">HEBERGEMENT</a>
+				<a class="text-gray-900 mr-4 hover:text-blue-700" href="#restauration">RESTAURATION</a>
+				<a class="text-gray-900 mr-4 hover:text-blue-700" href="#events">REUNIONS ET EVENEMENTS</a>
+				<a class="text-gray-900 mr-4 hover:text-blue-700" href="#contact">CARTES ET CONTACT</a>
+				<a class="text-gray-900 mr-4 hover:text-blue-700" href="#avis">AVIS</a>
+				<a class="text-gray-900 mr-4 hover:text-blue-700" href="reservation.html">RESERVATION</a>
+				<a href="connexion.html" style="margin-left: auto;" class="text-gray-900 mr-4 hover:text-blue-700"><i
+						class="fa fa-power-off"></i></a><br>
+			</div>
+		</div>
+	</header>
+	<div class="container-div items-center justify-center text-center">
+		<form action="#" class="bg-white p-6 rounded-lg shadow-md">
+			<br><br><br><br>
+			<h2 class="text-2xl font-medium mx-auto my-auto text-center">𝑅é𝓈𝑒𝓇𝓋𝒶𝓉𝒾𝑜𝓃</h2>
+			<h2 class="text-2xl font-medium mx-auto my-auto text-center">_____</h2>
+			<div class="mb-4 ">
+				<label class="block font-medium mb-2" for="arrival_date">Date d'arrivée</label>
+				<input type="date" id="arrival_date" name="arrival_date" class="p-2 border rounded-lg w-1/2">
+			</div>
+			<div class="mb-4 ">
+				<label class="block font-medium mb-2" for="departure_date">Date de départ</label>
+				<input type="date" id="departure_date" name="departure_date" class="p-2 border rounded-lg w-1/2">
+			</div>
+			<div class="mb-4 ">
+				<label class="block font-medium mb-2" for="room_type">Type de chambre</label>
+				<select id="room_type" name="room_type" class="p-2 border rounded-lg w-1/2">
+					<option value="">Sélectionner le type de chambre</option>
+					<option value="single">Chambre simple</option>
+					<option value="double">Chambre double</option>
+					<option value="suite">Suite</option>
+				</select>
+			</div>
+			<div class="mb-4">
+				<label class="block font-medium mb-2" for="guest_name">Nom du invité</label>
+				<input type="text" id="guest_name" name="guest_name" class="p-2 border rounded-lg w-1/2">
+			</div>
+			<div class="mb-4">
+				<label class="block font-medium mb-2" for="guest_email">Email du invité</label>
+				<input type="email" id="guest_email" name="guest_email" class="p-2 border rounded-lg w-1/2">
+			</div>
+			<div class="mb-4">
+				<label class="block font-medium mb-2" for="guest_phone">Téléphone du invité</label>
+				<input type="tel" id="guest_phone" name="guest_phone" class="p-2 border rounded-lg w-1/2">
+			</div>
+			<div class="mb-4">
+				<label class="block font-medium mb-2" for="special_requests">Demandes spéciales</label>
+				<textarea id="special_requests" name="special_requests" rows="4"
+					class="p-2 border rounded-lg w-1/2"></textarea>
+			</div>
+			<button type="submit"
+				class="bg-gray-700 text-white rounded-sm py-2 px-4 hover:bg-gray-400">Réserver</button>
+			<br><br>
+		</form>
+	</div>
+</body>
+<footer class="bg-gray-50 text-gray-900 p-0.10 fixed z-50 bottom-0 w-full">
+	<div class="flex justify-between">
+		<div>
+			<a href="#">Contact</a>
+			<a href="#">|</a>
+			<a href="#">Mentions Légales</a>
+			<a href="#">|</a>
+			<a href="#">Conditions d'utilisation</a>
+		</div>
+		<div class="flex">
+			<a href="#">
+				<i class="fab fa-instagram fa-2x text-gray-900 mx-4"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-twitter fa-2x text-gray-900 mx-4"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-facebook fa-2x text-gray-900 mx-4"></i>
+			</a>
+		</div>
+	</div>
+</footer>
+
+</html>
