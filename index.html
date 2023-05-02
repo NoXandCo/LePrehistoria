@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <html>
+<style>
+	header {
+		position: relative;
+		height: 40vh;
+		overflow: hidden;
+	}
+
+	#bg-video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 400px;
+		object-fit: cover;
+		z-index: -1;
+	}
+
+	.navbarstart {
+		position: relative;
+		z-index: 1;
+	}
+</style>
 
 <head>
 	<title>Le Préhistoria </title>
@@ -12,29 +34,39 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
 		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
-<header class="fixed z-200  shadow-lg text-center h-1/4 w-full">
-	<h1 class="mb-4 text-3xl  font-extrabold text-yellow-700 dark:text-white md:text-5xl lg:text-6xl"><span
-			class="text-transparent bg-clip-text bg-gradient-to-r to-yellow-600 from-yellow-500">𝙿𝚁𝙴𝙷𝙸𝚂𝚃𝙾𝚁𝙸𝙰 𝙷𝙾𝚃𝙴𝙻
-		</span></h1>
+
+<header class="h-100 text-center items-center">
 	<img src="images/logomin.png" alt="Logo" class="fixed top-0 mr-4 h-20 w-20">
-	<div class="h-35 shadow-lg bg-transparent flex item-center px-10">
-		<div class="navbarstart flex font-size space-x-6 w-full">
-			<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#hebergement">HEBERGEMENT</a>
-			<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#restauration">RESTAURATION</a>
-			<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#events">REUNIONS ET EVENEMENTS</a>
-			<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#contact">CARTES ET CONTACT</a>
-			<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#avis">AVIS</a>
-			<a class="text-gray-900 mr-4 hover:text-yellow-700" href="reservation.html">RESERVATION</a>
-			<a class="text-gray-900 mr-4 hover:text-yellow-700" href="connexion.html" style="margin-left: auto;" ><i
-					class="fa fa-power-off"></i></a><br>
-		</div>
+	<div id="video" class="relative">
+		<h1 class="mb-4 text-3xl font-extrabold text-yellow-700 dark:text-white md:text-5xl lg:text-6xl">
+			<span
+				class="text-transparent bg-clip-text bg-gradient-to-r to-yellow-600 from-yellow-500">𝙿𝚁𝙴𝙷𝙸𝚂𝚃𝙾𝚁𝙸𝙰
+				𝙷𝙾𝚃𝙴𝙻</span>
+		</h1>
+		<video autoplay muted loop id="bg-video" class="absolute z-0 w-full h-full top-0 left-0">
+			<source src="video.mp4" type="video/mp4">
+		</video>
 	</div>
 </header>
+<div id="nav" class="h-35 shadow-lg bg-transparent item-center px-10 relative z-10">
+	<div class="navbarstart flex font-size space-x-6 w-full">
+		<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#hebergement">HEBERGEMENT</a>
+		<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#restauration">RESTAURATION</a>
+		<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#events">REUNIONS ET EVENEMENTS</a>
+		<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#contact">CARTES ET CONTACT</a>
+		<a class="text-gray-900 mr-4 hover:text-yellow-700" href="#avis">AVIS</a>
+		<a class="text-gray-900 mr-4 hover:text-yellow-700" href="reservation.html">RESERVATION</a>
+		<a class="text-gray-900 mr-4 hover:text-yellow-700" href="connexion.html" style="margin-left: auto;">
+			<i class="fa fa-power-off"></i>
+		</a>
+		<br>
+	</div>
+</div>
 
 <body class=" relative overflow-y-auto bg-gray-50 dark:bg-gray-900">
 	<div class="h-screen">
 		<div class="container-div top-50 items-center justify-center">
-			<br><br><br><br><br><br>
+			<br><br>
 			<div id="hebergement" class="w-1/2 mx-auto h-100 bg-white shadow-lg flex flex-col justify-center shadow-md">
 				<br>
 				<h2 class="text-4x2 font-medium mx-auto my-auto text-center">𝒩𝑜𝓈 𝐻é𝒷𝑒𝓇𝑔𝑒𝓂𝑒𝓃𝓉𝓈</h2>
@@ -175,7 +207,10 @@
 				<br>
 				<h2 class="text-4x2 font-medium mx-auto my-auto text-center">𝒞𝒶𝓇𝓉𝑒𝓈 𝑒𝓉 𝒞𝑜𝓃𝓉𝒶𝒸𝓉</h2>
 				<h2 class="text-4x2 font-medium mx-auto my-auto text-center">_____</h2>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.7240208365947!2d1.1721655155423059!3d45.01022597909822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ff559969796f8f%3A0x91561edee7fae264!2sRte%20de%20Valojoulx%2C%2024290%20La%20Chapelle-Aubareil!5e0!3m2!1sfr!2sfr!4v1680195943537!5m2!1sfr!2sfr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.7240208365947!2d1.1721655155423059!3d45.01022597909822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ff559969796f8f%3A0x91561edee7fae264!2sRte%20de%20Valojoulx%2C%2024290%20La%20Chapelle-Aubareil!5e0!3m2!1sfr!2sfr!4v1680195943537!5m2!1sfr!2sfr"
+					width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 			<br><br>
 		</div>
